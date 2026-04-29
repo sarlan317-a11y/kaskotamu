@@ -541,7 +541,7 @@ const App = () => {
     );
   }
 
-  const themeColors = { iuran: 'emerald', pengeluaran: 'rose', anggota: 'indigo', tim: 'teal', riwayat: 'sky', arisan: 'orange', juara: 'yellow', rekap: 'slate', pengaturan: 'gray' };
+  const themeColors = { iuran: 'teal', pengeluaran: 'rose', anggota: 'indigo', tim: 'teal', riwayat: 'rose', arisan: 'orange', juara: 'rose', rekap: 'teal', pengaturan: 'gray' };
   const themeColor = themeColors[activePage];
   
   let displayData = [];
@@ -570,7 +570,7 @@ const App = () => {
                </div>
                <span className="font-semibold text-lg">Admin</span>
             </div>
-            <button onClick={handleLogout} className="p-2 bg-orange-500 rounded-md active:scale-95 transition-transform"><LogOut size={20} /></button>
+            <button onClick={handleLogout} className="p-2 bg-teal-500 rounded-md active:scale-95 transition-transform"><LogOut size={20} /></button>
           </div>
           <div className="flex items-center gap-3">
             <div className="bg-orange-400/50 p-2 rounded-lg"><Wallet size={24} /></div>
@@ -583,7 +583,7 @@ const App = () => {
         <div className="px-4 -mt-6">
           <div className="flex gap-2 mb-6">
             <div className="bg-black w-10 h-10 rounded-full flex items-center justify-center text-white"><Users size={20} /></div>
-            <div className="bg-orange-500 flex-1 rounded-xl h-10 flex items-center justify-center font-semibold text-white shadow-md">Dashboard Utama</div>
+            <div className="bg-teal-500 flex-1 rounded-xl h-10 flex items-center justify-center font-semibold text-white shadow-md">Satu Kartu Menentukan Segalanya</div>
           </div>
           <div className="grid grid-cols-3 gap-4">
             {[
@@ -679,7 +679,7 @@ const App = () => {
 
         <div className="bg-gray-800 p-6 text-white sticky top-0 z-[100] flex items-center gap-4">
           <button onClick={() => setActivePage('dashboard')} className="p-2 hover:bg-white/10 rounded-full transition"><ArrowLeft size={24} /></button>
-          <div><h1 className="text-xl font-bold">Pengaturan</h1><p className="text-[10px] opacity-70 font-bold uppercase">Aplikasi Mini Wash</p></div>
+          <div><h1 className="text-xl font-bold">Pengaturan</h1><p className="text-[10px] opacity-70 font-bold uppercase">Aplikasi Kas Kotamu125</p></div>
         </div>
 
         <div className="p-4 space-y-6">
